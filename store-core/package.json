@@ -1,0 +1,43 @@
+{
+  "name": "moj-sklep",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"vite --host\" \"cd pocketbase && pocketbase.exe serve --http=0.0.0.0:8090\"",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview --host",
+    "start:prod": "npm run preview"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.930.0",
+    "@aws-sdk/s3-request-presigner": "^3.930.0",
+    "axios": "^1.8.4",
+    "cors": "^2.8.5",
+    "lucide-preact": "^0.503.0",
+    "lucide-react": "^0.503.0",
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^7.0.5",
+    "pocketbase": "^0.26.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.5.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-helmet": "^6.1.11",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.2.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1"
+  }
+}

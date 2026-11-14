@@ -1,0 +1,18 @@
+body
+{
+	background: #fafbfc;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+select,
+button
+{
+	font-size: 1rem;
+}
+
+button
+{
+	cursor: pointer;
+}

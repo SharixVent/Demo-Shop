@@ -1,0 +1,100 @@
+.container-loader
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50dvh;
+}
+
+.loader
+{
+	height: 80px;
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: end;
+
+}
+
+.dot-1,
+.dot-2,
+.dot-3
+{
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	border-radius: 50%;
+	position: relative;
+	animation: jump 1.5s linear infinite;
+}
+
+.dot-1
+{
+	animation-delay: 0s;
+}
+
+.dot-2
+{
+	animation-delay: 0.25s;
+}
+
+.dot-3
+{
+	animation-delay: 0.5s;
+}
+
+@keyframes jump
+{
+	20%
+	{
+		top: 0px
+	}
+
+	40%
+	{
+		top: -15px
+	}
+
+	60%
+	{
+		top: -25px
+	}
+
+	80%
+	{
+		top: 0px
+	}
+
+	90%
+	{
+		top: 0px
+	}
+
+	100%
+	{
+		top: 0px
+	}
+}
+
+.container-spinner
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50dvh;
+}
+
+.spinner {
+	height: 50px;
+	width: 50px;
+	border: 6px solid #cccccc;
+	border-top-color: red;
+	border-radius: 50%;	
+animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

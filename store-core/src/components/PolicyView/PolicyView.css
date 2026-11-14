@@ -1,0 +1,46 @@
+/* src/components/PolicyView/PolicyView.css */
+
+.policy-client-container {
+    max-width: 600px;
+    margin: 100px auto; /* Duży odstęp od góry strony */
+    padding: 20px;
+    text-align: center; /* 🔥 Wyśrodkowanie wszystkich elementów */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styl dla głównego nagłówka */
+.policy-client-title {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Styl dla daty poniżej nagłówka */
+.policy-client-date {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 48px; /* Większy odstęp przed przyciskiem */
+    font-style: italic;
+}
+
+/* Styl dla przycisku przekierowania */
+.policy-client-btn {
+    display: inline-block;
+    background-color: #b10000; 
+    color: #ffffff;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none; /* Usunięcie podkreślenia linku */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(177, 0, 0, 0.15);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efekt po najechaniu myszką na przycisk */
+.policy-client-btn:hover {
+    background-color: #8b0000; /* Ciemniejsza czerwień */
+    transform: translateY(-2px); /* Lekkie uniesienie przycisku */
+    box-shadow: 0 10px 15px -3px rgba(177, 0, 0, 0.3);
+}

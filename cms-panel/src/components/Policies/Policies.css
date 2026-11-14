@@ -1,0 +1,118 @@
+/* src/components/Policies/Policies.css */
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .policies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.policy-card {
+  border-top: 4px solid #2563eb !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.policy-status {
+  margin: 14px 0 20px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-active {
+  color: #15803d;
+  background: #dcfce7;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.status-missing {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.policy-current-file-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.policy-delete-btn {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.policy-delete-btn:hover {
+  background-color: #dc2626;
+  color: #ffffff;
+  border-color: #dc2626;
+}
+
+.policy-upload-wrapper {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 10px;
+  border: 2px dashed #cbd5e1;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.policy-upload-wrapper:hover,
+.policy-upload-wrapper.dragging {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.policy-upload-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+  color: #475569;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.policy-upload-input::file-selector-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 12px;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.policy-upload-input::file-selector-button:hover {
+  background-color: #1d4ed8;
+}

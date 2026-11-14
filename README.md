@@ -49,7 +49,7 @@ The project is organized into two primary application modules within a single mo
 ### Step 1: Clone the repository and install NPM packages
 Required environment: **Node.js (v18+)**.
 
-    git clone https://github.com/YOUR_USERNAME/demoshop.git
+    git clone https://github.com/SharixVent/Demo-Shop.git
     cd demoshop
     npm run install:all
 
