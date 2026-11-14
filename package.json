@@ -1,0 +1,17 @@
+{
+  "name": "demoshop-platform",
+  "private": true,
+  "version": "1.0.0",
+  "description": "E-Commerce Storefront with integrated PocketBase server and standalone Admin CMS",
+  "scripts": {
+    "install:all": "npm install && npm --prefix storefront install && npm --prefix admin-cms install",
+    "dev:store": "npm --prefix storefront run dev",
+    "dev:admin": "npm --prefix admin-cms run dev",
+    "dev:pb": "cd storefront && ./pocketbase serve",
+    "dev": "concurrently -n \"STORE,ADMIN,PB\" -c \"blue,magenta,green\" \"npm run dev:store\" \"npm run dev:admin\" \"npm run dev:pb\"",
+    "build": "npm --prefix storefront run build && npm --prefix admin-cms run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
